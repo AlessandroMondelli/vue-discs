@@ -8,7 +8,7 @@
         <div class="col-sm-6">
           <ul>
             <li v-for="(item, index) in items" :key="index">
-              <a :href="item.href">{{ item.title }}</a>
+              <router-link :to="item.href">{{ item.title }}</router-link>
             </li>
           </ul>
         </div>
@@ -22,9 +22,9 @@ export default {
   data() {
     return {
       items: [
-        { href: "home", title: "Home" },
-        { href: "search", title: "Search" }
-      ]
+        { href: "/", title: "Home" },
+        { href: "info", title: "Info" }
+    ],
     };
   }
 };

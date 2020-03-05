@@ -2,28 +2,21 @@
   <div class="music-container">
     <music-header></music-header>
 
-    <music-cds-container></music-cds-container>
+    <music-info></music-info>
   </div>
 </template>
 
 <script>
 import MusicHeader from "../components/MusicHeader";
-import MusicCdsContainer from "../components/MusicCdsContainer";
+import MusicInfo from "../components/MusicInfo";
 
 export default {
   components: {
     MusicHeader,
-    MusicCdsContainer
+    MusicInfo
   },
   data() {
     return {};
   }
 };
 </script>
-
-<style lang="scss">
-.music-container {
-  height: 100vh;
-  background: #1d2d3b;
-}
-</style>
